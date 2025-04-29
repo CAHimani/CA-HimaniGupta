@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Detail | CA Himani Gupta</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="TAX ANALYSE">
+                    <span>Tax Analyse</span>
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#services" class="active">Services</a></li>
+                    <li><a href="../index.html#testimonials">Testimonials</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button class="sign-up-btn">Sign Up</button>
+                <button class="menu-btn" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#services" class="active">Services</a></li>
+            <li><a href="../index.html#testimonials">Testimonials</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Service Detail Hero -->
+    <section class="service-detail-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="../index.html#services">Services</a> / 
+                <span id="service-breadcrumb">Service Detail</span>
+            </div>
+            <h1 id="service-title">Service Detail</h1>
+            <div class="service-meta">
+                <div class="service-icon">
+                    <i id="service-icon" class="fa-solid fa-notes-medical"></i>
+                </div>
+                <div class="service-info">
+                    <div class="service-rating">
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                    <div class="service-duration">
+                        <i class="far fa-clock"></i>
+                        <span>30 mins</span>
+                    </div>
+                    <div class="service-type">
+                        <i class="fas fa-video"></i>
+                        <span>Video Call</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail Content -->
+    <section class="service-detail-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Service Content -->
+                <div class="service-content">
+                    <div id="service-description" class="service-description">
+                        <!-- Content will be dynamically populated based on service -->
+                    </div>
+                </div>
+
+                <!-- Schedule Form -->
+                <div class="schedule-form-container">
+                    <div class="form-header">
+                        <h2>Schedule a Consultation</h2>
+                        <p>Please fill out the form below to book a consultation with CA Himani Gupta.</p>
+                    </div>
+                    
+                    <form id="scheduleForm" action="https://submit-form.com/DSMmMF9rF" method="POST" class="schedule-form">
+                        <!-- <input type="hidden" name="service" id="formServiceName" value=""> -->
+                        <div class="form-group">
+                            <label for="selectedService">Selected Service</label>
+                            <input type="text" id="selectedService" name="selectedService" readonly>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Address*</label>
+                            <textarea id="address" name="address" rows="2" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="postal">Postal Code*</label>
+                            <input type="text" id="postal" name="postal" required>
+                        </div>
+                        
+                        <div class="form-group date-selection">
+                            <label>Preferred Dates*</label>
+                            <div class="date-checkboxes">
+                                <div class="date-option">
+                                    <input type="checkbox" id="date1" name="preferred_dates[]" value="In the next 3 days">
+                                    <label for="date1">In the next 3 days</label>
+                                </div>
+                                <div class="date-option">
+                                    <input type="checkbox" id="date2" name="preferred_dates[]" value="This week">
+                                    <label for="date2">This week</label>
+                                </div>
+                                <div class="date-option">
+                                    <input type="checkbox" id="date3" name="preferred_dates[]" value="Next week">
+                                    <label for="date3">Next week</label>
+                                </div>
+                                <div class="date-option">
+                                    <input type="checkbox" id="date4" name="preferred_dates[]" value="This month">
+                                    <label for="date4">This month</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="specific-dates">Specific Date/Time (Optional)</label>
+                            <textarea id="specific-dates" name="specific_dates" rows="2" placeholder="Please mention any specific dates and times that work for you"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Notes (Optional)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Any specific questions or concerns you'd like to discuss?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Schedule Consultation</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <p class="form-note">Your information is secure and will only be used to schedule your consultation.</p>
+                    </form>
+                    <!-- <input type="hidden" name="service" id="formServiceName" value=""> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <!-- <section class="related-services">
+        <div class="container">
+            <h2>Other Services You Might Like</h2>
+            <div class="services-grid" id="related-services-grid">
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TAX ANALYSE">
+                    <span>Tax Analyse</span>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#services">Services</a>
+                    <a href="../index.html#testimonials">Testimonials</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CA HIMANI GUPTA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="services.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
