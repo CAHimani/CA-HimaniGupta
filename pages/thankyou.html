@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | CA Himani Gupta</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .thank-you-section {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 120px 0 80px;
+            background-color: var(--light-gray);
+        }
+        
+        .thank-you-content {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            width: 90%;
+            animation: fadeInUp 0.8s forwards;
+        }
+        
+        .thank-you-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            color: var(--secondary-color);
+            font-size: 40px;
+        }
+        
+        .thank-you-content h1 {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .thank-you-content p {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .next-steps {
+            background-color: rgba(7, 122, 125, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .next-steps h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .next-steps ol {
+            padding-left: 20px;
+        }
+        
+        .next-steps ol li {
+            margin-bottom: 10px;
+        }
+        
+        .home-btn {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            border-radius: 30px;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        
+        .home-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--dark-gray);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="TAX ANALYSE">
+                    <span>Tax Analyse</span>
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#services" class="active">Services</a></li>
+                    <li><a href="../index.html#testimonials">Testimonials</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button class="sign-up-btn">Sign Up</button>
+                <button class="menu-btn" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#services" class="active">Services</a></li>
+            <li><a href="../index.html#testimonials">Testimonials</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h1>Thank You for Scheduling a Consultation!</h1>
+            <p>Your request has been successfully submitted. We appreciate your interest in our <span id="service-name">services</span>.</p>
+            
+            <div class="next-steps">
+                <h2>What Happens Next?</h2>
+                <ol>
+                    <li>You will receive a confirmation email within the next 30 minutes.</li>
+                    <li>Our team will review your request and contact you within 24 hours to confirm your appointment.</li>
+                    <li>We'll send you a calendar invite with meeting details and any preparation documents.</li>
+                    <li>At the scheduled time, you'll meet with CA Himani Gupta for your consultation.</li>
+                </ol>
+            </div>
+            
+            <p>If you have any questions before your consultation, please feel free to reach out to us at <strong>contact@taxanalyse.com</strong> or call <strong>+91 98765 43210</strong>.</p>
+            
+            <a href="../index.html" class="home-btn">
+                <i class="fas fa-home"></i>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TAX ANALYSE">
+                    <span>Tax Analyse</span>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#services">Services</a>
+                    <a href="../index.html#testimonials">Testimonials</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CA HIMANI GUPTA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get service name from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceName = urlParams.get('service') || 'consultation';
+            
+            // Update text with service name
+            document.getElementById('service-name').textContent = serviceName;
+            
+            // Initialize mobile menu
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            
+            if (menuToggle && mobileNav) {
+                menuToggle.addEventListener('click', () => {
+                    mobileNav.classList.toggle('active');
+                    
+                    // Change icon based on menu state
+                    const icon = menuToggle.querySelector('i');
+                    if (mobileNav.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
