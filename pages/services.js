@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Service data with detailed content
     const servicesData = [
         {
-            id: "health-insurance",
+            id: "health-insurance-consultation",
             title: "Health Insurance Consultation",
             icon: "fa-notes-medical",
             description: `
