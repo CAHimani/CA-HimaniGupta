@@ -355,8 +355,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const serviceSlug = params.get("id"); // Example: health-insurance
 
     const serviceMap = {
-        "health-insurance": "Health Insurance Consultation",
-        "mutual-fund": "Mutual Fund Consultation",
+        "health-insurance-consultation": "Health Insurance Consultation",
+        "mutual-fund-consultation": "Mutual Fund Consultation",
         "term-life-insurance-advisory": "Term Life Insurance Advisory",
         "portfolio-review": "Portfolio Review",
         "wealth-management": "Wealth Management",
